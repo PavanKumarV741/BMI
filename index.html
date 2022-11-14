@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>BMI calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>BMI calculator</h2>
+    <span><input type="radio" name="gender" value="male" id="male" /><label>Male</label>
+    <input type="radio" name="gender" value="female" id="female" /><label>Female</label>
+    <input type="radio" name="gender" value="others" id="others"/><label>others</label></span>
+    <br/>
+    <label for="weight">weight (Kg)</label>
+    <input type="text" placeholder="weight" id="weight"/>
+    <br/>
+    <label for="height">height in (cm)</label>
+    <input type="text" placeholder="height" id="height"/>
+    <br/>
+
+    <span>
+    <!-- <button onclick="calculate()">calculate</button> -->
+    <!-- <input type="submit" value="calculate" id="calculate"/> -->
+    <button type="submit" class="calculate" onclick="calculate()">calculate</button>
+
+    <!-- <button onclick="clear()">clear</button> -->
+    <!-- <input type="reset" value="Reset" id="reset"/>
+    // resetbtn.addEventListener("click",()=>{
+        //     window.location.reload()
+        // }) -->
+    <button onclick="reset()" id="reset">reset</button>
+    </span>
+    <div id="results"></div>
+    <!-- <div id="err"></div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
